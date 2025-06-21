@@ -1,0 +1,17 @@
+{
+  "name": "nicholaspescados",
+  "version": "1.0.0",
+  "main": "controller.js",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [],
+  "author": "Nicholas",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "pg": "^8.16.2"
+  }
+}

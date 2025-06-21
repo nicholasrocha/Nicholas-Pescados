@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Nicholas Pescados</title>
+</head>
+
+<body>
+  <header>
+    <img src="./images/logo.png" alt="Logo" class="logo">
+    <div class="nome">
+    <h1>Nicholas Pescados, o seu pescado com os melhores preços!</h1>
+  </div>
+  </header>
+
+  <main>
+    <section class="products">
+
+
+      <div class="fish-card" data-id="1">
+        <img src="./images/tilapia.jpeg" alt="Tilápia">
+        <h3>Tilápia</h3>
+        <p>R$28.90/kg</p>
+        <input type="number" min="0.1" step="0.1" value="1" class="kg-input" />
+        <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="fish-card" data-id="2">
+        <img src="./images/camarao.jpg" alt="Camarão">
+        <h3>Camarão</h3>
+        <p>R$69.50/kg</p>
+        <input type="number" min="0.1" step="0.1" value="1" class="kg-input" />
+        <button onclick="addToCart(2)">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="fish-card" data-id="3">
+        <img src="./images/tambaqui.jpg" alt="Tambaqui">
+        <h3>Tambaqui</h3>
+        <p>R$32.00/kg</p>
+        <input type="number" min="0.1" step="0.1" value="1" class="kg-input" />
+        <button onclick="addToCart(3)">Adicionar ao Carrinho</button>
+      </div>
+
+      <div class="fish-card" data-id="4">
+        <img src="./images/traira.jpg" alt="Traíra">
+        <h3>Traíra</h3>
+        <p>R$25.90/kg</p>
+        <input type="number" min="0.1" step="0.1" value="1" class="kg-input" />
+        <button onclick="addToCart(4)">Adicionar ao Carrinho</button>
+      </div>
+            <div class="avatar-container">
+  <img src="./images/avatar.png" alt="Avatar" class="avatar-img">
+</div>
+    </section>
+
+    
+    <section class="cart">
+      <h2>Carrinho</h2>
+      <div id="cart-list"></div>
+      <button id="clear-cart">Finalizar Compra</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

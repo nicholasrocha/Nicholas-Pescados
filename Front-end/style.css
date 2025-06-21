@@ -1,0 +1,133 @@
+body {
+  background: #f0f8ff;
+  font-family: Arial, sans-serif;
+  color: #222;
+  margin: 0;
+}
+
+header {
+  background: #3fa7e3;
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 8px;
+}
+
+.nome {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fish-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fish-card img {
+  width: 100%;
+  height: 150px;              /* altura fixa para imagens */
+  object-fit: cover;          /* ajusta sem distorcer, pode cortar um pouco para caber */
+  border-radius: 6px;
+}
+
+.fish-card h3 {
+  margin: 10px 0 5px 0;
+}
+
+.fish-card p {
+  margin-bottom: 10px;
+}
+
+.fish-card input[type="number"] {
+  width: 60px;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+.fish-card button {
+  background: #3fa7e3;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fish-card button:hover {
+  opacity: 0.9;
+}
+
+.cart {
+  margin-top: 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+#cart-list div {
+  padding: 4px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  background: #3fa7e3;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 205px; /* ajusta para sobrepor o carrinho */
+  left: 40px;
+  z-index: 1; /* garante que o avatar fique na frente */
+}
+
+.avatar-img {
+  width: 150px;       /* ou o tamanho que você quiser */
+  height: 150px;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .fish-card {
+    width: 100%;  /* ocupa toda a largura disponível */
+  }
+
+  .avatar-img {
+    width: 80px;
+    height: 80px;
+  }
+}
