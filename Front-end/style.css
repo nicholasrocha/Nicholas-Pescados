@@ -48,8 +48,8 @@ main {
 
 .fish-card img {
   width: 100%;
-  height: 150px;              /* altura fixa para imagens */
-  object-fit: cover;          /* ajusta sem distorcer, pode cortar um pouco para caber */
+  height: 150px;
+  object-fit: cover;
   border-radius: 6px;
 }
 
@@ -110,20 +110,20 @@ button:hover {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 205px; /* ajusta para sobrepor o carrinho */
+  top: 205px;
   left: 40px;
-  z-index: 1; /* garante que o avatar fique na frente */
+  z-index: 1;
 }
 
 .avatar-img {
-  width: 150px;       /* ou o tamanho que você quiser */
+  width: 150px; 
   height: 150px;
   object-fit: cover;
 }
 
 @media (max-width: 600px) {
   .fish-card {
-    width: 100%;  /* ocupa toda a largura disponível */
+    width: 100%;
   }
 
   .avatar-img {
