@@ -131,3 +131,21 @@ button:hover {
     height: 80px;
   }
 }
+
+.fish-card {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fish-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 174, 255, 0.2);
+}
